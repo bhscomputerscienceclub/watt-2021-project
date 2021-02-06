@@ -79,4 +79,4 @@ def login():
 
 @app.route("/leaderboard")
 def leaderboard():
-    return str(display_leaderboard())
+    return render_template("leaderboard.html", ls = display_leaderboard())

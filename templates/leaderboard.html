@@ -29,10 +29,12 @@
       <th>Username</th>
       <th>Score</th>
     </tr>
+    {% for item in ls %}
     <tr>
-        <th>thisisatest</th>
-        <th>69</th>
+	    <th>{{item[0]}}</th>
+        <th>{{item[1]}}</th>
     </tr>
+    {% endfor %}
 
   </table>
 
