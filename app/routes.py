@@ -60,7 +60,7 @@ def generateProblem(message=None):
 def levelSet():
     if request.method == "POST":
         try:
-            session["difficulty"] = int(request.form.get("v", 1))
+            session["difficulty"] = int(request.form.get("difficulty", 1))
         except:
             pass
         return redirect("/")
