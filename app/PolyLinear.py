@@ -42,7 +42,7 @@ def lineargen2():
 
 def lineargen3():
     A, B, C = randomNum3(), randomNum3(), randomNum3()
-    A = noZeros(A)
+    A, B = noZeros(A), noZeros(B)
     LinearEquation = "{}x + {}y = {}"
     printedEquation = LinearEquation.format(A, B, C)
 
