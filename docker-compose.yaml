@@ -3,10 +3,14 @@ services:
   web:
     container_name: math-prob
     volumes:
-      - ./pts:/code/pts
+      - points:/code/pts
     build: .
     ports:
       - "5000:5000"
+    environment:
+      - PYTHONUNBUFFERED=1
+volumes:
+  points:
 #networks:
 #  default:
 #    external:
