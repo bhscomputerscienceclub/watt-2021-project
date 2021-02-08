@@ -37,7 +37,7 @@ def lineargen2():
     yInter = round((-x1 * m) + y1, 2)
     xInter = round((-y1 + m * x1) / m, 2)
 
-    return yInter, xInter, printedEquation
+    return xInter, yInter, printedEquation
 
 
 def lineargen3():
@@ -50,7 +50,7 @@ def lineargen3():
     yInter = round(C / B, 2)
     xInter = round(C / A, 2)
 
-    return yInter, xInter, printedEquation
+    return xInter, yInter, printedEquation
 
 
 # Random linear gen
